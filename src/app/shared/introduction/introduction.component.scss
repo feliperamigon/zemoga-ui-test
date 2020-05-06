@@ -1,0 +1,31 @@
+#introSection {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 950px;
+}
+
+.introBackground {
+    width: 100%;
+    object-fit: fill;
+    max-height:100%;
+}
+
+.closingSection {
+    position: relative;
+    bottom: 74px;
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 60%;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.1);
+    }
+}

@@ -1,0 +1,40 @@
+.mainHeader {
+    background-color: #0D333333;
+    padding: 10px 0;
+}
+
+.navLinks {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.navLink {
+    list-style: none;
+    display: flex;
+    margin-left: 100px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        align-self: flex-end;
+    }
+    &:first-child {
+        margin-left: 0;
+        a {
+            font-weight: 700;
+            font-size: 25px;
+        }
+    }
+    &:last-child {
+        margin-right: 50px;
+    }
+}
+
+@media (min-width: 30rem) {
+    .navLinks {
+        grid-template-columns: 1fr auto auto auto;
+        justify-items: start;
+    }
+}
