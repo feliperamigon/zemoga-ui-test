@@ -1,5 +1,14 @@
 #rulings-section {
-    padding: 30px 80px;
+    padding: 0 140px;
+    max-width: 1200px;
+    margin: 0 auto;
+    h2 {
+        margin: 2rem 0;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: lighter;
+        color: #333333;
+    }
 }
 
 .characters {

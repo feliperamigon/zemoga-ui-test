@@ -10,6 +10,7 @@ import { SmallAdComponent } from './small-ad/small-ad.component';
 import { SmallTileComponent } from './small-tile/small-tile.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { RulingsComponent } from './rulings/rulings.component';
+import { SubmitCharComponent } from './submit-char/submit-char.component';
 
 /** Shared Services */
 import { SharedService } from './shared.service';
@@ -32,13 +33,14 @@ const uiComponents = [
   SmallAdComponent,
   SmallTileComponent,
   IntroductionComponent,
-  RulingsComponent
+  RulingsComponent,
+  SubmitCharComponent
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    MatSnackBarModule
+    materialModules
   ],
   declarations: [
     uiComponents,

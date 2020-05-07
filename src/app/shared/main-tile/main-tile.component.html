@@ -1,3 +1,22 @@
-<p>
-  main-tile works!
-</p>
+<div class="main-tile">
+  <div class="main-tile-content">
+    <h2 class="main-tile-header"> What's your opinion on<br><b>Pope Francis?</b></h2>
+    <p class="main-tile-description">
+      He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true
+      pedophile punishing pontiff? (thumbs up)
+    </p>
+    <div class="wiki-link">
+      <img src="../../../assets/wiki.png" alt="Wiki logo">
+      <a href="">More information</a>
+    </div>
+    <p class="disclaimer">What's Your Verdict?</p>
+  </div>
+  <div class="main-tile-voting-box">
+    <div class="vote-box vote-up" (click)="vote()">
+      <img src="../../../assets/big-thumb-up.png" alt="Thumb up main box">
+    </div>
+    <div class="vote-box vote-down" (click)="vote()">
+      <img src="../../../assets/big-thumb-down.png" alt="Thumb up main box">
+    </div>
+  </div>
+</div>

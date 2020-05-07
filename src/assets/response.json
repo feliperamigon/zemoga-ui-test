@@ -23,14 +23,14 @@
             }
         },
         {
-            "name": "Cristina Fernández Kirchner",
+            "name": "Cristina Fernández de Kirchner",
             "time": "<b>1 month ago</b> in Politics",
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
             "votesUpCount": 23,
             "votesDownCount": 100,
             "images": {
                 "url": "./../../../assets/cristina.png",
-                "alt": "Cristina Fernández Kirchner"
+                "alt": "Cristina Fernández de Kirchner"
             }
         },
         {
@@ -42,6 +42,28 @@
             "images": {
                 "url": "./../../../assets/malala.png",
                 "alt": "Malala Yousafzai"
+            }
+        },
+        {
+            "name": "Kanye West",
+            "time": "<b>1 month ago</b> in Entertainment",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
+            "votesUpCount": 64,
+            "votesDownCount": 36,
+            "images": {
+                "url": "./../../../assets/kanye.png",
+                "alt": "Kanye west"
+            }
+        },
+        {
+            "name": "Mark Zuckerberg",
+            "time": "<b>1 month ago</b> in Business",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
+            "votesUpCount": 150,
+            "votesDownCount": 190,
+            "images": {
+                "url": "./../../../assets/mark.png",
+                "alt": "Mark Zuckerberg"
             }
         }
         

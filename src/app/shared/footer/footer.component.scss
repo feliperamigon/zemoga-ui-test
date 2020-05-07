@@ -1,0 +1,38 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px dotted #d1d1d1;
+    padding: 30px 0;
+    margin: 0 80px;
+}
+
+.footer-links {
+    a {
+        text-decoration: none;
+        font-size: 12px;
+        color: #807d7d;
+        margin-right: 25px;
+        cursor: pointer;
+        &:hover {
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer-social {
+    span {
+        font-size: 12px;
+        color: #807d7d;
+        vertical-align: super;
+    }
+    span, img {
+        margin-right: 20px;
+    }
+    img {
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+    }
+}

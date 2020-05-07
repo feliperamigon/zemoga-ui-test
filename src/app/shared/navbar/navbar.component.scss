@@ -1,6 +1,11 @@
 .mainHeader {
-    background-color: #0D333333;
+    background-color: rgba(13, 51, 51, 0.401);
     padding: 10px 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
 }
 
 .navLinks {
