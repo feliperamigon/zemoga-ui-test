@@ -18,8 +18,8 @@
             "name": "Mark Zuckerberg",
             "time": "<b>1 month ago</b> in Business",
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
-            "votesUpCount": 3,
-            "votesDownCount": 3,
+            "votesUpCount": 15,
+            "votesDownCount": 30,
             "totalVotes": 6,
             "images": {
                 "url": "./../../../assets/mark.png",
@@ -28,7 +28,7 @@
         },
         {
             "id": 2,
-            "name": "Cristina Fernández de Kirchner",
+            "name": "Cristina Kirchner",
             "time": "<b>1 month ago</b> in Politics",
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
             "votesUpCount": 7,

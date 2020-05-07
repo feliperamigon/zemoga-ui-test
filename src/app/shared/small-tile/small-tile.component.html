@@ -1,6 +1,6 @@
 <div [style.background]="charUrl" class="small-tile">
   <div class="small-tile-content">
-    <img *ngIf="char.votesUpCount > char.votesDownCount" class="thumb-box thumb-up-box" src="../../../assets/thumb-up.png" alt="thumb-up">
+    <img *ngIf="char.votesUpCount >= char.votesDownCount" class="thumb-box thumb-up-box" src="../../../assets/thumb-up.png" alt="thumb-up">
     <img *ngIf="char.votesUpCount < char.votesDownCount" class="thumb-box thumb-down-box" src="../../../assets/thumb-down.png" alt="thumb-up">
     <div class="small-tile-description">
       <h3 class="character-name">{{char?.name}}</h3>
