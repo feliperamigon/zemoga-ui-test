@@ -8,13 +8,13 @@ export class SharedService {
 
     private jsonUrl = 'assets/response.json';
 
-    constructor(private http: HttpClient, private _snackBar: MatSnackBar) { }
+    constructor(private http: HttpClient, private snackBar: MatSnackBar) { }
 
     public getData(): Observable<any> {
         return this.http.get(this.jsonUrl);
     }
 
     public showSnackbar(message: string) {
-        this._snackBar.open(message, 'Dismiss', {duration: 5000});
+        this.snackBar.open(message, 'Dismiss', {duration: 5000});
     }
 }

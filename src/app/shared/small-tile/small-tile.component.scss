@@ -52,11 +52,12 @@
     margin-right: 10px;
     border: none;
     background-repeat: none;
+    cursor: pointer;
+}
 
-    &:hover {
-        cursor: pointer;
-        border: 1px solid white;
-    }
+.vote-selected {
+    border: 1px solid white;
+    outline: 0;
 }
 
 .vote-up {
@@ -70,9 +71,15 @@
 .vote-now {
     padding: 10px 15px;
     background: transparent;
-    border: 0.5px solid #fff;
+    border: 1px solid #fff;
     color: #fff;
+    outline: 0;
     cursor: pointer;
+    &:hover {
+        background: #FFF;
+        color: #333333;
+        text-decoration: underline;
+    }
 }
 
 .progress-vote-bar {
@@ -84,7 +91,7 @@
 
 .vote-bar {
     display: flex;
-    padding: 5px;
+    padding: 10px;
     span {
         font-size: 20px;
     }

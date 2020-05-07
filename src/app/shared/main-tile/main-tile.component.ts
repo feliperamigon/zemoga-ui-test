@@ -13,7 +13,7 @@ export class MainTileComponent implements OnInit {
   ngOnInit() {
   }
 
-  vote() { 
+  vote() {
     this.sharedService.showSnackbar('Thanks for voting!');
   }
 

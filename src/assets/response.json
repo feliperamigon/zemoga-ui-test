@@ -1,71 +1,56 @@
 {
     "characters": [
         {
+            "id": 0,
             "name": "Kanye West",
             "time": "<b>1 month ago</b> in Entertainment",
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
-            "votesUpCount": 64,
-            "votesDownCount": 36,
+            "votesUpCount": 5,
+            "votesDownCount": 6,
+            "totalVotes": 11,
             "images": {
                 "url": "./../../../assets/kanye.png",
                 "alt": "Kanye west"
             }
         },
         {
+            "id": 1,
             "name": "Mark Zuckerberg",
             "time": "<b>1 month ago</b> in Business",
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
-            "votesUpCount": 150,
-            "votesDownCount": 190,
+            "votesUpCount": 3,
+            "votesDownCount": 3,
+            "totalVotes": 6,
             "images": {
                 "url": "./../../../assets/mark.png",
                 "alt": "Mark Zuckerberg"
             }
         },
         {
+            "id": 2,
             "name": "Cristina Fernández de Kirchner",
             "time": "<b>1 month ago</b> in Politics",
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
-            "votesUpCount": 23,
-            "votesDownCount": 100,
+            "votesUpCount": 7,
+            "votesDownCount": 1,
+            "totalVotes": 8,
             "images": {
                 "url": "./../../../assets/cristina.png",
                 "alt": "Cristina Fernández de Kirchner"
             }
         },
         {
+            "id": 3,
             "name": "Malala Yousafzai",
             "time": "<b>1 month ago</b> in Entertainment",
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
-            "votesUpCount": 750,
-            "votesDownCount": 140,
+            "votesUpCount": 10,
+            "votesDownCount": 1,
+            "totalVotes": 11,
             "images": {
                 "url": "./../../../assets/malala.png",
                 "alt": "Malala Yousafzai"
             }
-        },
-        {
-            "name": "Kanye West",
-            "time": "<b>1 month ago</b> in Entertainment",
-            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
-            "votesUpCount": 64,
-            "votesDownCount": 36,
-            "images": {
-                "url": "./../../../assets/kanye.png",
-                "alt": "Kanye west"
-            }
-        },
-        {
-            "name": "Mark Zuckerberg",
-            "time": "<b>1 month ago</b> in Business",
-            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dignissimos impedit cumque distinctio maiores numquam",
-            "votesUpCount": 150,
-            "votesDownCount": 190,
-            "images": {
-                "url": "./../../../assets/mark.png",
-                "alt": "Mark Zuckerberg"
-            }
         }
-        
     ]
 }

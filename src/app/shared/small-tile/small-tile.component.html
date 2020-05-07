@@ -6,14 +6,18 @@
       <h3 class="character-name">{{char?.name}}</h3>
       <span class="character-time" [outerHTML]="char.time"></span>
       <p class="character-description">{{char?.description}}</p>
-      <div class="vote-box">
-        <button class="vote-btn vote-up" (click)="vote(1)">
+      <div *ngIf="showVoteBox" class="vote-box">
+        <button [ngClass]="[selectedVote ? 'vote-selected' : '']" class="vote-btn vote-up" (click)="selectedVote = true">
           <img src="../../../assets/thumb-up.png" alt="thumb-up">
         </button>
-        <button class="vote-btn vote-down" (click)="vote(-1)">
+        <button [ngClass]="[selectedVote === false ? 'vote-selected' : '']" class="vote-btn vote-down" (click)="selectedVote = false">
           <img src="../../../assets/thumb-down.png" alt="thumb-down">
         </button>
-        <button class="vote-now">Vote now</button>
+        <button class="vote-now" (click)="vote()">Vote now</button>
+      </div>
+      <div *ngIf="!showVoteBox" class="vote-done">
+        <p class="character-description">Thank you for voting!</p>
+        <button class="vote-now" (click)="showVoteBox = !showVoteBox">Vote again</button>
       </div>
     </div>
   </div>

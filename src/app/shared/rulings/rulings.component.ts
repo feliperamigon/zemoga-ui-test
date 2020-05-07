@@ -12,7 +12,13 @@ export class RulingsComponent implements OnInit {
 
     constructor(private sharedService: SharedService) {
         this.sharedService.getData().subscribe((data: any) => {
-            this.characters = data.characters;
+            if (!localStorage.data) {
+                this.characters = data.characters;
+                localStorage.setItem('data', JSON.stringify(this.characters));
+            } else {
+                const dataRetrieved = localStorage.getItem('data');
+                this.characters = JSON.parse(dataRetrieved);
+            }
         });
     }
 

@@ -12,10 +12,12 @@ export class SmallTileComponent implements OnInit {
   // @Input char<any>: Character information
   @Input() char: any;
   private charUrl: any;
+  private selectedVote = null;
+  private showVoteBox = true;
   private upPercentage: string;
   private downPercentage: string;
 
-  constructor(private sanitizer: DomSanitizer, private sharedService: SharedService ) { }
+  constructor(private sanitizer: DomSanitizer, private sharedService: SharedService) { }
 
   ngOnInit() {
     this.charUrl = this.sanitizer.bypassSecurityTrustStyle('linear-gradient(0deg, #00000070, transparent),'
@@ -29,14 +31,21 @@ export class SmallTileComponent implements OnInit {
     this.downPercentage = `${Math.round((this.char.votesDownCount / totalVotes) * 100)}%`;
   }
 
-  vote(vote: number): void {
-    if (vote === 1) {
+  vote(): void {
+    const localData = JSON.parse(localStorage.getItem('data'));
+    const currentChar = localData.find(el => el.id === this.char.id);
+    if (this.selectedVote) {
       this.char.votesUpCount++;
-    } else if (vote === -1) {
+    } else {
       this.char.votesDownCount++;
     }
+    this.char.totalVotes++;
+    currentChar.totalVotes++;
+    localData[this.char.id] = this.char;
+    localStorage.setItem('data', JSON.stringify(localData));
     this.calculateVotes();
-    this.sharedService.showSnackbar('Thanks for voting!');
+    this.sharedService.showSnackbar('Total votes: ' + (this.char.totalVotes));
+    this.showVoteBox = false;
   }
 
 }
