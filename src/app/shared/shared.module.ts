@@ -9,6 +9,20 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SmallAdComponent } from './small-ad/small-ad.component';
 import { SmallTileComponent } from './small-tile/small-tile.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { RulingsComponent } from './rulings/rulings.component';
+
+/** Shared Services */
+import { SharedService } from './shared.service';
+
+/** Pipes */
+import { EscapeHtmlPipe } from './../pipes/escape-html.pipe';
+
+/** Angular Material */
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+const materialModules = [
+  MatSnackBarModule
+];
 
 const uiComponents = [
   AddPeopleComponent,
@@ -17,18 +31,24 @@ const uiComponents = [
   NavbarComponent,
   SmallAdComponent,
   SmallTileComponent,
-  IntroductionComponent
+  IntroductionComponent,
+  RulingsComponent
 ];
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MatSnackBarModule
   ],
   declarations: [
-    uiComponents
+    uiComponents,
+    EscapeHtmlPipe
   ],
   exports: [
     uiComponents
+  ],
+  providers: [
+    SharedService
   ]
 })
 export class SharedModule { }

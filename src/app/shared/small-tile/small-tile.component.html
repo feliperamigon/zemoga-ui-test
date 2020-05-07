@@ -1,3 +1,30 @@
-<p>
-  small-tile works!
-</p>
+<div [style.background]="charUrl" class="small-tile">
+  <div class="small-tile-content">
+    <img *ngIf="char.votesUpCount > char.votesDownCount" class="thumb-box thumb-up-box" src="../../../assets/thumb-up.png" alt="thumb-up">
+    <img *ngIf="char.votesUpCount < char.votesDownCount" class="thumb-box thumb-down-box" src="../../../assets/thumb-down.png" alt="thumb-up">
+    <div class="small-tile-description">
+      <h3 class="character-name">{{char?.name}}</h3>
+      <span class="character-time" [outerHTML]="char.time"></span>
+      <p class="character-description">{{char?.description}}</p>
+      <div class="vote-box">
+        <button class="vote-btn vote-up" (click)="vote(1)">
+          <img src="../../../assets/thumb-up.png" alt="thumb-up">
+        </button>
+        <button class="vote-btn vote-down" (click)="vote(-1)">
+          <img src="../../../assets/thumb-down.png" alt="thumb-down">
+        </button>
+        <button class="vote-now">Vote now</button>
+      </div>
+    </div>
+  </div>
+  <div class="progress-vote-bar">
+    <div [style.width]="upPercentage" class="vote-bar blue-bar">
+      <img src="../../../assets/thumb-up.png" alt="thumb-up">
+      <span>{{upPercentage}}</span>
+    </div>
+    <div [style.width]="downPercentage" class="vote-bar yellow-bar">
+      <span>{{downPercentage}}</span>
+      <img src="../../../assets/thumb-down.png" alt="thumb-down">
+    </div>
+  </div>
+</div>

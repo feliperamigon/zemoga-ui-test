@@ -1,0 +1,11 @@
+#rulings-section {
+    padding: 30px 80px;
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100%;
+}
