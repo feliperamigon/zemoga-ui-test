@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 #footer {
     display: flex;
     flex-direction: row;
@@ -34,5 +36,17 @@
         &:nth-last-child(1) {
             margin-right: 0;
         }
+    }
+}
+
+
+@media only screen and (max-width: $large-screen) {
+    #footer {
+        margin: 0;
+        padding: 20px 10px;
+    }
+
+    .footer-links {
+        max-width: 181px;
     }
 }

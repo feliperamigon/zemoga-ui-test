@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .small-tile {
     display: flex;
     flex-direction: column;
@@ -99,7 +101,7 @@
 
 .blue-bar {
     justify-content: flex-start;
-    background-color: #1cbbb480;
+    background-color: #1cbbb490;
     img {
         margin-right: 5px;
     }
@@ -107,7 +109,7 @@
 
 .yellow-bar {
     justify-content: flex-end;
-    background-color: #ffad1d80;
+    background-color: #ffad1d90;
     img {
         margin-left: 5px;
     }

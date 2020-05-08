@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .main-tile {
     background: linear-gradient(120deg, #5f5c5c, transparent);
     background-size: 800px 100%;
@@ -77,9 +79,31 @@
 }
 
 .vote-up {
-    background: #1cbbb4;
+    background: $ze-blue;
 }
 
 .vote-down {
-    background: #ffad1d;
+    background: $ze-yellow;
+}
+
+@media only screen and (max-width: $large-screen) {
+    .main-tile-content {
+        // padding: 10px 10px 0 10px;
+    }
+
+    .main-tile-description {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .main-tile-header {
+        b {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+    .vote-box {
+        padding: 10px 0;
+    }
 }

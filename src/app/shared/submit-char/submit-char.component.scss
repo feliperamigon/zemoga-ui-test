@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .submit-new-char {
     display: flex;
     flex-direction: row;
@@ -23,6 +25,16 @@
         cursor: pointer;
         &:hover {
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.81), rgba(255, 255, 255, 0.8));
+        }
+    }
+}
+
+@media only screen and (max-width: $large-screen) {
+    .submit-new-char {
+        flex-direction: column;
+        margin: 10px 0;
+        p {
+            line-height: 30px;
         }
     }
 }

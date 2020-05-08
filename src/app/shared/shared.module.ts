@@ -16,7 +16,7 @@ import { SubmitCharComponent } from './submit-char/submit-char.component';
 import { SharedService } from './shared.service';
 
 /** Pipes */
-import { EscapeHtmlPipe } from './../pipes/escape-html.pipe';
+import { EscapeHtmlPipe } from './pipes/escape-html.pipe';
 
 /** Angular Material */
 import { MatSnackBarModule } from '@angular/material/snack-bar';
