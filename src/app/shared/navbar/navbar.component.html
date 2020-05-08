@@ -1,14 +1,17 @@
 <header class="main-header">
-
   <nav class="navbar">
-
+    <div class="burguer-icon" (click)="shouldRun = true">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <ul class="nav-links">
-      <div class="brand-link">  
+      <div class="brand-link">
         <li class="nav-link">
           <a href="">Rule of Thumb.</a>
         </li>
       </div>
-      <div class="secondary-links"> 
+      <div class="secondary-links">
         <li class="nav-link">
           <a href="">Past trials</a>
         </li>
@@ -18,12 +21,19 @@
         <li class="nav-link">
           <a href="">Log In / Sing Up</a>
         </li>
-        <li class="nav-link">
-          <a href="">How It Works</a>
-        </li>
       </div>
     </ul>
-
   </nav>
-
 </header>
+
+
+<!-- Sidebar manu -->
+<div class="example-container" *ngIf="shouldRun">
+  <div id="overlay">
+    <ul>
+      <li><a href="#">Rule of Thumb.</a></li>
+      <li><a href="#">Past trials</a></li>
+      <li><a href="#">Log In / Sing Up</a></li>
+    </ul>
+  </div>
+</div>

@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "ze-ui-test"
+  "defaultProject": "ze-ui-test",
+  "cli": {
+    "analytics": false
+  }
 }

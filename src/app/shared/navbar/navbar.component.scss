@@ -1,47 +1,86 @@
+@import "../../../styles.scss";
+
 .main-header {
-    background: linear-gradient(180deg, #5f5c5c, transparent);
-    overflow: hidden;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    width: 100%;
+  background: linear-gradient(180deg, #5f5c5c, transparent);
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+}
+
+.mobile-header {
+  // display: none;
+}
+
+.burguer-menu {
+  span {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
+
+.burguer-icon {
+  display: none;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  outline: 0;
+  div {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
 }
 
 .nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 140px;
 }
 
 .secondary-links {
-    display: flex;
-    flex-direction: row;
-    .nav-link {
-        margin-right: 50px;
-        a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: lighter;
-            font-size: 18px;
-            align-self: flex-end;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
+  display: flex;
+  flex-direction: row;
+  .nav-link {
+    margin-right: 50px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: lighter;
+      font-size: 18px;
+      align-self: flex-end;
     }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .brand-link {
-    a {
-        font-weight: 500;
-        font-size: 25px;
-        color: #fff;
-        text-decoration: none;
-    }
+  a {
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .nav-link {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+}
+
+@media only screen and (max-width: $large-screen) {
+  .burguer-icon {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
 }
