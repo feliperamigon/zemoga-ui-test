@@ -1,10 +1,29 @@
-@import './scss_modules/variables.scss';
+@import "./scss_modules/variables.scss";
 
-html, body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-    height:100%;
+html,
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.placeholder {
+  width: 500px;
+  height: 100px;
+  display: block;
+  margin: 100px auto;
+  background: #eee;
+  border: 1px solid grey;
+  h2 {
+    text-align: center;
+  }
+}

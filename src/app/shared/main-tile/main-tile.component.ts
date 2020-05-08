@@ -4,17 +4,17 @@ import { SharedService } from '../shared.service';
 @Component({
   selector: 'app-main-tile',
   templateUrl: './main-tile.component.html',
-  styleUrls: ['./main-tile.component.scss']
+  styleUrls: ['./main-tile.component.scss'],
 })
 export class MainTileComponent implements OnInit {
+  constructor(private sharedService: SharedService) {}
 
-  constructor(private sharedService: SharedService) { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
-
-  vote() {
+  /**
+   * @desc Display an snackbar
+   */
+  vote(): void {
     this.sharedService.showSnackbar('Thanks for voting!');
   }
-
 }
