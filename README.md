@@ -12,7 +12,7 @@
 This test was made with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 - Must have NodeJS and npm installed
-- Clone this repository running `npm run install`
+- Clone this repository and install dependencies by running `npm run install`
 
 ## Development server
 
